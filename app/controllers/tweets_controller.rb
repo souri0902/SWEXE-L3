@@ -4,6 +4,8 @@ class TweetsController < ApplicationController
   # GET /tweets or /tweets.json
   def index
     @tweets = Tweet.all
+    logger.debug("aaaaaa")
+    logger.debug(@tweets.first.message)
   end
 
   # GET /tweets/1 or /tweets/1.json

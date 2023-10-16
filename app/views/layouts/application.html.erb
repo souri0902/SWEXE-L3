@@ -10,7 +10,35 @@
     <%= javascript_importmap_tags %>
   </head>
 
+
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      
+      <div class="contents1">
+        <h2>
+          <%= link_to tweets_path do %>
+            <div class="home">
+              <span>🏠　ホーム</span>
+            </div>
+          <% end %>
+          <li>＃　話題を検索</li>
+          <li>🔔　通知</li>
+          <li>📧　メッセージ</li>
+          <li>📖　ブックマーク</li>
+          <li>🔲　リスト</li>
+          <li>👤　プロフィール</li>
+          <li>・　もっと見る</li>
+          <%= link_to new_tweet_path do %>
+            <div class="bottom">
+              <span>ツイートする</span>
+            </div>
+          <% end %>
+        </h2>
+      </div>
+      
+      <div class="contents2">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Tweets</h1>
-
+<table>
+  <tr>
+    <td>
+      <h1>ツイート </h1>
+    </td>
+    <td>
+      <h2 id="sub"> ツイートと返信　メディア　いいね</h2>
+    </td>
+  </tr>
+</table>
 <div id="tweets">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
     <p>
-      <%= link_to "Show this tweet", tweet %>
+      <%= link_to "詳細", tweet %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New tweet", new_tweet_path %>
+<%= link_to "ツイートする", new_tweet_path %>

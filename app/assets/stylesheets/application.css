@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+
+h1{ 
+    font-family: "Helvetica Neue" , Helvetica;
+    text-decoration: underline;
+    text-decoration-color: #1DA1F2;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 7px;
+}
+
+#sub{
+    color: #c0c0c0;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+}
+
+.wrapper {
+    display: flex;
+    padding: 10px;
+    text-decoration-line: none;
+}
+
+.wrapper>div{
+    width:50%;
+}
+
+.contents1 {
+    flex: 1;
+}
+
+.contents2 {
+    flex: 3;
+}
+
+.bottom {
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 100vh;
+    font-size: 120%;
+    padding: 15px;
+}
+
+.home {
+    color: black;
+    padding: 15px;
+}
